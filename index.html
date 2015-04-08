@@ -66,6 +66,19 @@
       p {
       margin: 0 0 0.75em
       }
+
+      .tagline {
+      clear: both;
+      font-weight: 300;
+      margin: 1em 0;
+      padding-top: 1em
+      }
+
+      @media screen and (max-width: 480px) {
+      .tagline {
+      font-size: 110%
+      }
+      }
     </style>
   </head>
   <body>
@@ -73,7 +86,10 @@
     </div>
     <div id="main-content">
       <p>
-        <h1>Paul Evans</h1>
+        <h2 class="tagline">
+          <strong>Paul Evans</strong>
+          " is a software developer and senior consultant with <a href='http://www.lattapartners.com'>Latta Partners</a>."
+        </h2>
       <p>Hello, and welcome to my website.  My name is Paul Evans.  Here you'll find an index of my
         public work.  I am a software developer by trade, so many of my public
         projects are of the software variety.</p>
