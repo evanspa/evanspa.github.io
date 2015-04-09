@@ -23,6 +23,9 @@
       margin-top: 50px;
       }
 
+      #title-name {
+      }
+
       @media only screen
       and (min-device-width : 375px)
       and (max-device-width : 667px)
@@ -32,6 +35,10 @@
         width: 85%;
         margin: 0 auto;
         margin-top: 50px;
+        }
+
+        #title-name {
+          -webkit-text-size-adjust: none;
         }
       }
 
@@ -84,7 +91,7 @@
     </div>
     <div id="main-content">
       <p>
-        <span style="font-size: 175%; font-weight: bold;">Paul Evans</span>
+        <span id="title-name" style="font-size: 175%; font-weight: bold;">Paul Evans</span>
         <span style="font-size: 145%;">
         is a programmer and senior consultant with <a href='http://www.lattapartners.com'>Latta Partners</a>.
         </span>
@@ -92,11 +99,11 @@
       <p>Hello, and welcome to my website.  Here you'll find a collection of my
         public work.  I am a programmer by trade, so much of my collection is of
         the software variety.</p>
-      <p id="menu">
-        <span style="font-size: 125%"><a href="#about-me">About Me</a></span>
-        <span style="margin-left: .8em; font-size: 125%"><a href="#software-projects">Software Projects</a></span>
-        <span style="margin-left: .8em; font-size: 125%"><a href="#writing">Writing</a></span>
-        <span style="margin-left: .8em; font-size: 125%"><a href="#euler">Project Euler</a></span>
+      <p id="menu" style="text-align: center">
+        <span style="font-size: 125%"><a style="text-decoration: none" href="#about-me">About Me</a></span>
+        <span style="margin-left: .8em; font-size: 125%"><a style="text-decoration: none" href="#software-projects">Software Projects</a></span>
+        <span style="margin-left: .8em; font-size: 125%"><a style="text-decoration: none" href="#writing">Writing</a></span>
+        <span style="margin-left: .8em; font-size: 125%"><a style="text-decoration: none" href="#euler">Project Euler</a></span>
         <br />
         <span style="margin-left: 0em"><a href="https://github.com/evanspa"><img style="vertical-align: middle" src="images/GitHub-Mark-120px-plus.png" height="60px" width="60px"></a></span>
         <span style="margin-left: 1.5em"><a href="http://www.linkedin.com/in/paulrevans"><img style="vertical-align: middle" src="images/linkedin.png" height="45" width="45px"></a></span>
