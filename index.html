@@ -14,11 +14,11 @@
       left: 0;
       background-color: #0000FF;
       width: 100%;
-      height: 20px;
+      height: 10px;
       }
 
       div#main-content {
-      width: 75%;
+      width: 45%;
       margin: 0 auto;
       margin-top: 50px;
       }
@@ -39,46 +39,10 @@
       text-rendering: optimizeLegibility
       }
 
-      h1 {
-      font-size: 2.25em
-      }
-
-      h2 {
-      font-size: 2em
-      }
-
-      h3 {
-      font-size: 1.75em
-      }
-
-      h4 {
-      font-size: 1.5em
-      }
-
-      h5 {
-      font-size: 1.25em
-      }
-
-      h6 {
-      font-size: 1em
-      }
-
       p {
       margin: 0 0 30px 0;
-      font-size: 150%;
       }
 
-      .tagline {
-      clear: both;
-      font-weight: 300;
-      margin: 1em 0;
-      padding-top: 1em
-      }
-
-      @media screen and (max-width: 480px) {
-      .tagline {
-      font-size: 110%
-      }
       }
     </style>
   </head>
@@ -87,17 +51,23 @@
     </div>
     <div id="main-content">
       <p>
-        <h1 class="tagline"><span style="font-size: 175%; font-weight: bold">Paul Evans</span>
+        <span style="font-size: 175%; font-weight: bold;">Paul Evans</span>
+        <span style="font-size: 145%;">
         is a software developer and senior consultant with <a href='http://www.lattapartners.com'>Latta Partners</a>.
-        </h1>
+        </span>
       </p>
       <p>Hello, and welcome to my website.  My name is Paul Evans.  Here you'll find an index of my
         public work.  I am a software developer by trade, so many of my public
         projects are of the software variety.</p>
       <p>Hopefully there is something here that catches your eye.</p>
-      <hr />
-      <img src="images/Octocat.jpg">
-      <hr />
+      <hr style="width: 40%" />
+      <div style="text-align:center;">
+        <span style="margin-right: 5px"><a href="https://github.com/evanspa"><img style="vertical-align: middle" src="images/Octocat-small.png" height="65" width="65px"></a></span>
+        <span style="margin-right: 10px"><a href="http://www.linkedin.com/in/paulrevans"><img style="vertical-align: middle" src="images/linkedin.png" height="45" width="45px"></a></span>
+        <span style="margin-right: 0px"><a href="http://stackoverflow.com/users/1034895/paul-evans"><img style="vertical-align: middle" src="images/stackoverflow.jpg" height="85" width="85px"></a></span>
+        <span style="margin-right: 5px"><a href="http://stackoverflow.com/users/1034895/paul-evans"><img style="vertical-align: middle" src="images/math-se.png" height="75" width="75px"></a></span>
+      </div>
+      <hr style="width: 40%" />
     </div>
   </body>
 </html>
