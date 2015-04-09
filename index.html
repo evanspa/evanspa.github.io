@@ -17,25 +17,23 @@
       height: 10px;
       }
 
-      @media only screen and (max-width: 640px) and (-webkit-device-pixel-ratio: 2) {
-
-      }
-
-      @media only screen and (max-width: 415px)  {
-      div#main-content {
+      @media only screen
+      and (min-device-width : 375px)
+      and (max-device-width : 667px)
+      and (orientation : portrait)
+      and (-webkit-min-device-pixel-ratio : 2) {
+        div#main-content {
         width: 85%;
         margin: 0 auto;
         margin-top: 50px;
         }
       }
 
-      @media only screen and (min-width: 416px)  {
-        div#main-content {
+      div#main-content {
         width: 45%;
         margin: 0 auto;
         margin-top: 50px;
         }
-      }
 
 
       body {
@@ -111,7 +109,7 @@
         <span style="font-size: 150%; font-style: italic; font-weight: normal;">About Me:</span>
       </div>
       <div id="about-me">
-        Myy name is Paul Evans.  I am a programmer based out of Charlotte, North Carolina.
+        My name is Paul Evans.  I am a programmer based out of Charlotte, North Carolina.
       </div>
       <div style="margin-top: 20px">
         <a name="software-projects" aria-hidden="true"></a>
