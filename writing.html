@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="Paul Evans">
+    <title>Paul Evans</title>
+    <style type="text/css" media="screen">
+
+      div#banner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #000066;
+      width: 100%;
+      height: 3em;
+      }
+
+      div#main-content {
+      width: 45%;
+      margin: 0 auto;
+      margin-top: 50px;
+      }
+
+      #title-name {
+      }
+
+      @media only screen
+      and (min-device-width : 375px)
+      and (max-device-width : 667px)
+      and (orientation : portrait)
+      and (-webkit-min-device-pixel-ratio : 2) {
+        div#main-content {
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 50px;
+        }
+
+        #title-name {
+          -webkit-text-size-adjust: none;
+        }
+      }
+
+      body {
+      -webkit-font-smoothing: antialiased;
+      background-color: #fff;
+      color: #333;
+      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-size: 1em;
+      line-height: 1.5
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      line-height: 1.25em;
+      margin: 0;
+      text-rendering: optimizeLegibility
+      }
+
+      p {
+      margin: 0 0 30px 0;
+      }
+
+      #menu {
+      border-radius: 15px;
+      background: #D8E1E6;
+      font-weight: bold;
+      padding: 12px;
+      }
+
+      #project {
+      border-radius: 15px;
+      background: AliceBlue;
+      padding: 12px;
+      margin-top: 1em;
+      }
+
+      #about-me {
+      border-radius: 15px;
+      background: AliceBlue;
+      padding: 12px;
+      margin-top: 1em;
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      <div style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);">
+        <a href="#about-me" style="text-decoration: none"><span style="color: white; font-weight: bold">About Me</span></a>
+        <a href="#software-projects" style="text-decoration: none"><span style="margin-left: 1em; color: white; font-weight: bold">Projects</span></a>
+        <a href="#writing" style="text-decoration: none"><span style="margin-left: 1em; color: white; font-weight: bold">Writing</span></a>
+        <a href="#project-euler" style="text-decoration: none"><span style="margin-left: 1em; color: white; font-weight: bold">Project Euler</span></a>
+        <span style="margin-left: 1em"><a href="https://github.com/evanspa"><img style="vertical-align: middle" src="images/GitHub-Mark-Light-120px-plus.png" height="30px" width="30px"></a></span>
+        <span style="margin-left: 1.5em"><a href="http://www.linkedin.com/in/paulrevans"><img style="vertical-align: middle" src="images/linkedin.png" height="25" width="25px"></a></span>
+        <span style="margin-left: .5em"><a href="http://stackoverflow.com/users/1034895/paul-evans"><img style="vertical-align: middle" src="images/so-icon.png" height="40" width="40px"></a></span>
+        <span style="margin-left: 0em"><a href="http://math.stackexchange.com/users/21817/paul-evans"><img style="vertical-align: middle" src="images/math-se.png" height="45" width="45px"></a></span>
+      </div>
+    </div>
+    <div id="main-content">
+      <!--<p>
+        <span id="title-name" style="font-size: 175%; font-weight: bold;">Paul Evans</span>
+        <span style="font-size: 145%;">
+        is a programmer and senior consultant with <a href='http://www.lattapartners.com'>Latta Partners</a>.
+        </span>
+      </p>-->
+      <p>Hello, and welcome to my website.  Here you'll find a collection of my
+        public work.  I am a programmer by trade, so much of my collection is of
+        the software variety.</p>
+      <div style="margin-top: 20px">
+        <a name="about-me" aria-hidden="true"></a>
+        <span style="font-size: 150%; font-style: italic; font-weight: normal;">About Me:</span>
+      </div>
+      <div id="about-me">
+        My name is Paul Evans.  I am a programmer based out of Charlotte, North Carolina.
+      </div>
+      <div style="margin-top: 20px">
+        <a name="software-projects" aria-hidden="true"></a>
+        <span style="font-size: 150%; font-style: italic; font-weight: normal;">Software Projects:</span>
+      </div>
+      <div id="project">
+        <a name="pe-ios-lib-suite"></a>
+        <span style="font-size: 120%; font-weight: bold;">PE* iOS Library Suite</span>
+        <p style="margin-top: .5em; margin-bottom: .8em; font-style: italic">A collection of iOS static libraries to aid in iOS application development.</p>
+        <ul style="margin-top: 0px">
+          <li><a style="font-weight: bold"
+          href="https://github.com/evanspa/PEObjc-Commons">PEObjc-Commons</a>:
+          an iOS static library that provides a set of everyday helper and
+          utility functionality.</li>
+          <li style="margin-top: .3em"><a style="font-weight: bold"
+          href="https://github.com/evanspa/PEXML-Utils">PEXML-Utils</a>: a
+          library simplifying working with XML. Built on top
+          of <a href="https://github.com/robbiehanson/KissXML">KissXML</a>.</li>
+          <li style="margin-top: .3em"><a style="font-weight: bold"
+          href="https://github.com/evanspa/PEHateoas-Client">PEHateoas-Client</a>:
+          a library for consuming hypermedia REST APIs. I.e. those that adhere
+          to the Hypermedia As The Engine Of Application State
+          (<a href="http://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>)
+          constraint. Built on top
+          of <a href="https://github.com/AFNetworking/AFNetworking">AFNetworking</a>.</li>
+          <li style="margin-top: .3em"><a style="font-weight: bold"
+          href="https://github.com/evanspa/PEWire-Control">PEWire-Control</a>: a
+          library for controlling Cocoa's NSURL loading system using simple XML
+          files. Built on top
+          of <a href="https://github.com/AliSoftware/OHHTTPStubs">OHHTTPStubs</a>.</li>
+          <li style="margin-top: .3em"><a style="font-weight: bold"
+          href="https://github.com/evanspa/PEAppTransaction-Logger">PEAppTransaction-Logger</a>:
+          a library client for
+          the <a href="#peapp-txn-logging-frmwk">PEAppTransaction Logging
+          Framework</a>.</li>
+          <li style="margin-top: .3em"><a style="font-weight: bold"
+          href="https://github.com/evanspa/PESimu-Select">PESimu-Select</a>: a
+          library aiding in the functional testing of web service enabled iOS
+          applications.</li>
+          <li style="margin-top: .3em"><a style="font-weight: bold"
+          href="https://github.com/evanspa/PEDev-Console">PEDev-Console</a>: a
+          library aiding in the functional testing of iOS applications.</li>
+        </ul>
+      </div>
+      <div id="project">
+        <a name="pe-clojure-lib-suite"></a>
+        <span style="font-size: 120%; font-weight: bold;">pe-* Clojure Library Suite</span>
+        <p style="margin-top: .5em; margin-bottom: .8em; font-style: italic">A collection of Clojure libraries to aid in Clojure application development.</p>
+        <ul style="margin-top: 0px">
+          <li><a style="font-weight: bold"
+          href="https://github.com/evanspa/pe-core-utils">pe-core-utils</a>:
+          provides a set of various collection-related, date-related and other
+          helpers functions.</li>
+          <li><a style="font-weight: bold"
+          href="https://github.com/evanspa/pe-datomic-utils">pe-datomic-utils</a>:
+          provides a set of helper functions for working with <a href="http://www.datomic.com">Datomic</a>.</li>
+          <li><a style="font-weight: bold"
+          href="https://github.com/evanspa/pe-datomic-testutils">pe-datomic-testutils</a>:
+          provides a set of helper functions to aid in unit testing Datomic-enabled functions.</li>
+          <li><a style="font-weight: bold"
+          href="https://github.com/evanspa/pe-user-core">pe-user-core</a>:
+          provides a set of functions for modeling a generic user, leveraging Datomic as a backend store.</li>
+          <li><a style="font-weight: bold"
+          href="https://github.com/evanspa/pe-user-testutils">pe-user-testutils</a>:
+          a set of helper functions to aid in unit testing code that depends on
+          the functionality of the pe-user-* libraries
+          (<a href="https://github.com/evanspa/pe-user-core">pe-user-core</a>
+          and <a href="https://github.com/evanspa/pe-user-rest">pe-user-rest</a>).</li>
+          <li><a style="font-weight: bold"
+          href="https://github.com/evanspa/pe-apptxn-core">pe-apptxn-core</a>:
+          provides a set of functions implementing the server-side core data
+          layer of the <a href="#peapp-txn-logging-frmwk">PEAppTransaction
+          Logging Framework</a>.</li>
+          <li><a style="font-weight: bold"
+          href="https://github.com/evanspa/pe-rest-utils">pe-rest-utils</a>:
+          provides a set of functions for building easy-to-version hypermedia
+          REST services (built on top
+          of <a href="http://clojure-liberator.github.io/liberator/">Liberator</a>).</li>
+          <li><a style="font-weight: bold"
+          href="https://github.com/evanspa/pe-rest-testutils">pe-rest-testutils</a>:
+          provides a set of helper functions for unit testing web services.</li>
+          <li><a style="font-weight: bold"
+          href="https://github.com/evanspa/pe-user-rest">pe-user-rest</a>:
+          provides a set of functions encapsulating an abstraction modeling a
+          user within a REST API and
+          leveraging <a href="http://www.datomic.com">Datomic</a>.</li>
+          <li><a style="font-weight: bold"
+          href="https://github.com/evanspa/pe-apptxn-restsupport">pe-apptxn-restsupport</a>:
+          provides a set of functions implementing the server-side REST layer of
+          the <a href="#peapp-txn-logging-frmwk">PEAppTransaction Logging
+          Framework</a>.</li>
+        </ul>
+      </div>
+      <div id="project">
+        <a name="peapp-txn-logging-frmwk" aria-hidden="true"></a>
+        <span style="font-size: 120%; font-weight: bold;">PEAppTransaction Logging Framework</span>
+        <p style="margin-top: .5em; margin-bottom: .8em; font-style: italic">A framework for capturing important events within your applications.</p>
+        <p style="margin-bottom: .9em">The PEAppTransaction Logging Framework (PELF) is a framework for
+          capturing important events within your applications. It is comprised of
+          3 main tiers: (1) the core data layer, (2) the web service layer and (3)
+          client libraries (currently only iOS).</p>
+
+        <p style="margin-bottom: .9em">The PELF provides a small set of functions to log what are termed "application
+          transactions." An application transaction is not a transaction in a database
+          sense; it is meant more to model application-level actions. For example, a user
+          creating a new purchase order within your application would be termed as an
+          application transaction. A user signing in to your application would be an
+          application transaction. A user signing out, another.</p>
+
+        <p style="margin-bottom: .9em">The PELF provides both client-side and server-side
+          libraries. pe-apptxn-restsupport (this library), is a server-side library
+          providing REST functionality for the PELF. PELF client-side libraries are used
+          by applications to locally record user-initiated application transactions and
+          transaction events. Transaction events are simply timestamped events associated
+          with an application transaction. E.g., if "create a purchase order" is an
+          application transaction, a transaction event might be: "user clicks 'New PO'
+          button to initiate transaction." Another event might be: "web service request
+          initiated to submit new PO data to server". And another: "web service response
+          received". All of this log data is saved locally on the client, and then later
+          pushed to the server for permanent storage (and offline analysis).</p>
+
+        <p style="margin-bottom: .9em">The motivation behind the creation of the
+        PEAppTransaction logging framework is simple: to systematically track
+        important events about the goings-on within an application (an end-user
+        application or otherwise). You can use the framework to record
+        information about your application, such as:</p>
+        <ul>
+          <li>How long a user takes to fill-out a form (or more generally, a call-to-action).</li>
+          <li>What the round-trip time is for making web service calls.</li>
+          <li>How often a user leaves a screen in your app without fulfilling the call-to-action.</li>
+        </ul>
+        <p style="margin-bottom: .9em">The set of use cases for which to use the
+          framework to log metadata is open-ended. You can use it for basic A/B
+          testing, tracking performance-related metrics and many more.</p>
+        <p style="margin-bottom: .9em">The following are the set of software projects that encompass the framework:
+        <ul style="margin-top: 0px">
+          <li style="margin-top: .3em"><a style="font-weight: bold"
+          href="https://github.com/evanspa/PEAppTransaction-Logger">PEAppTransaction-Logger</a>:
+          an iOS static library client for the PEAppTransaction Logging
+          Framework.</li>
+          <li><a style="font-weight: bold"
+          href="https://github.com/evanspa/pe-apptxn-core">pe-apptxn-core</a>: a
+          Clojure library providing a set of functions implementing the
+          server-side core data layer of the PEAppTransaction Logging
+          Framework.</li>
+          <li><a style="font-weight: bold"
+          href="https://github.com/evanspa/pe-apptxn-restsupport">pe-apptxn-restsupport</a>:
+          a Clojure libary providing a set of functions implementing the
+          server-side REST layer of the PEAppTransaction Logging Framework.</li>
+        </ul></p>
+      </div>
+      <div id="project">
+        <a name="fp-system" aria-hidden="true"></a>
+        <span style="font-size: 120%; font-weight: bold;">Fuel Purchase System</span>
+        <p style="margin-top: .5em; margin-bottom: .8em; font-style: italic">A
+        system for recording and analyzing your vehicle's fuel usage.</p>
+        <p style="margin-bottom: .9em">The fuel purchase system provides the
+        ability to record and analyze your vehicle's fuel usage. In its present
+        form, the fuel purchase system is not terribly useful. It enables you to
+        collect fuel usage statistics with respect to your vehicles, but none of
+        the analysis / reporting functionality is built out yet. It exists more
+        as a reference implementation for a set of libraries. The fuel purchase
+        system is a client/server one.</p>
+        <p style="margin-bottom: .9em">The fuel purchase system can be viewed as
+        a reference application for how to use the
+        various <a href="#pe-ios-lib-suite">PE* iOS libraries</a>
+        (<span style="font-style: italic">for the fuel system iOS client
+        application</span>) as well the <a href="#pe-clojure-lib-suite">pe-*
+        Clojure libraries</a> (<span style="font-style: italic">for the fuel
+        system server application</span>).</p>
+        <p style="margin-bottom: .9em">The following are the software projects
+        that encompass the <span style="font-weight: bold">server-side</span> of
+        the fuel purchase system:</p>
+        <ul style="margin-top: 0px">
+          <li style="margin-top: .3em"><a style="font-weight: bold"
+          href="https://github.com/evanspa/pe-fp-core">pe-fp-core</a>: a Clojure
+          library encapsulating the server-side core logic, model and data
+          access functionality of the fuel purchase system. pe-fp-core leverages
+          <a href="http://www.datomic.com">Datomic</a> as the underlying
+          backend.</li>
+          <li style="margin-top: .3em"><a style="font-weight: bold"
+          href="https://github.com/evanspa/pe-fp-rest">pe-fp-rest</a>: a Clojure
+          library providing REST API functionality for the fuel purchase system
+          (<span style="font-style: italic">this library simply exposes the
+          functionality of pe-fp-core as a REST API</span>).</li>
+          <li style="margin-top: .3em"><a style="font-weight: bold"
+          href="https://github.com/evanspa/pe-fp-app">pe-fp-app</a>: a Clojure
+          application providing the physical REST API endpoint.</li>
+        </ul>
+        <p style="margin-bottom: .9em">The following are the software projects
+        that encompass the <span style="font-weight: bold">client-side</span> of
+        the fuel purchase system:</p>
+        <ul>
+          <li style="margin-top: .3em"><a style="font-weight: bold"
+          href="https://github.com/evanspa/PEFuelPurchase-Common">PEFuelPurchase-Common</a>:
+          an iOS static library that encapsulates constant definitions (and
+          similar) of the fuel purchase system.</li>
+          <li style="margin-top: .3em"><a style="font-weight: bold"
+          href="https://github.com/evanspa/PEFuelPurchase-Model">PEFuelPurchase-Model</a>:
+          an iOS static library that encapsulates the core logic, model and data
+          access functionality of the client-side part of the fuel purchase
+          system (<span style="font-style: italic">leverages
+          PEFuelPurchase-Common</span>).</li>
+          <li style="margin-top: .3em"><a style="font-weight: bold"
+          href="https://github.com/evanspa/PEFuelPurchase-App">PEFuelPurchase-App</a>:
+          an iOS client application of the fuel purchase system
+          (<span style="font-style: italic">leverages
+          PEFuelPurchase-Model</span>).</li>
+        </ul>
+      </div>
+      <div style="margin-top: 20px">
+        <a name="writing" aria-hidden="true"></a>
+        <span style="font-size: 150%; font-style: italic; font-weight: normal;">Writing:</span>
+      </div>
+    </div>
+  </body>
+</html>
